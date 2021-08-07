@@ -13,10 +13,13 @@
     <div id="mocha"></div>
     <script>
         mocha.setup('bdd');
-        var assert = chai.assert;
+        const assert = chai.assert;
     </script>
 
-    <script src="tests.js" charset="utf-8"></script>
+    <script src="greet.js" charset="utf-8"></script>
+    <script src="test/greet.tests.js" charset="utf-8"></script>
+    <script src="buyMinutes.js" charset="utf-8"></script>
+    <script src="test/buyMinutes.tests.js" charset="utf-8"></script>
     <script>
         mocha.checkLeaks();
         mocha.run();
